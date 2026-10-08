@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://qr58brotahfw"]
+
+[ext_resource type="Script" path="res://Scripts/bumper.gd" id="1_jun42"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_wxtod"]
+bounce = 2.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mix0e"]
+radius = 49.366
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_klnkj"]
+radius = 49.0408
+
+[node name="Bumper" type="StaticBody2D"]
+physics_material_override = SubResource("PhysicsMaterial_wxtod")
+script = ExtResource("1_jun42")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+region_enabled = true
+region_rect = Rect2(968.699, 377.084, 109.494, 112.15)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_mix0e")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_klnkj")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

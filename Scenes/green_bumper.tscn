@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://deqnfwe3vhf3p"]
+
+[ext_resource type="PackedScene" uid="uid://qr58brotahfw" path="res://Scenes/bumper.tscn" id="1_2ju50"]
+[ext_resource type="Texture2D" uid="uid://cctm80ddbakh8" path="res://Sprites/spritesheet.png" id="2_tjc76"]
+
+[node name="Bumper" instance=ExtResource("1_2ju50")]
+points = 3
+
+[node name="Sprite2D" parent="." index="0"]
+texture = ExtResource("2_tjc76")
+region_rect = Rect2(1235.4, 375.097, 109.493, 115.286)

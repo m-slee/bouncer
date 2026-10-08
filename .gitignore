@@ -1,0 +1,48 @@
+# ==========================================
+# Godot Engine Default Ignores
+# ==========================================
+
+# Godot 4+ cache and local configuration directory
+.godot/
+/android/
+
+# Godot 3.x cache directory
+.import/
+
+# Imported translations (automatically generated from CSV files)
+*.translation
+
+# Temporary files created during runtime or saving
+*.tmp
+
+# ==========================================
+# Build and Export Outputs
+# ==========================================
+# Prevent your final compiled games from cluttering your repository
+*.exe
+*.apple
+*.gresource
+*.apk
+*.aar
+*.pck
+*.tgz
+
+# Export configuration (contains machine-specific setup, credentials, or local paths)
+export_presets.cfg
+
+# ==========================================
+# Mono / C# / .NET Specific (Only if using .NET version)
+# ==========================================
+.mono/
+data_*/
+mono_crash.*.json
+[Bb]in/
+[Oo]bj/
+
+# ==========================================
+# Crash Logs & System Specifics
+# ==========================================
+logs/
+*.log
+.DS_Store
+Thumbs.db
