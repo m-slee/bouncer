@@ -24,7 +24,6 @@
 *.gresource
 *.apk
 *.aar
-*.pck
 *.tgz
 
 # Export configuration (contains machine-specific setup, credentials, or local paths)
